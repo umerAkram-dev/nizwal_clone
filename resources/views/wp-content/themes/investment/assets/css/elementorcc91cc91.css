@@ -1,0 +1,10 @@
+@media (min-width: 1400px) {
+  .theme-investment .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: var(--container-max-widths-xxl);
+  }
+}
+.theme-investment .elementor-widget:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=elementor.css.map */

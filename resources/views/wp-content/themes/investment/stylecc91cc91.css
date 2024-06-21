@@ -1,0 +1,23 @@
+/*
+Theme Name: Investment
+Theme URI: https://bookpresstheme.com/investment
+Author: Themeperch
+Author URI: http://themeforest.net/user/themeperch
+Description: Our Investment expert theme is clean, blog-focused, and designed for clarity. Investment expert is simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 2.1.8
+Requires at least: 4.7
+Tested up to: 6.1
+Requires PHP: 5.6
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: three-columns, left-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: investment
+*/
+@media (min-width: 1400px){
+    .theme-investment .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: var(--container-max-widths-xxl);
+    }
+}
+.theme-investment .elementor-widget:not(:last-child){
+    margin-bottom: 0;
+}

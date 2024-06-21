@@ -1,0 +1,140 @@
+
+.cssmenu > ul > li {
+    position: relative
+}
+.cssmenu > ul > li > a {
+  -webkit-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+/*navigation*/
+.cssmenu .menu > li{ 
+    padding: 0;
+}
+.cssmenu .menu > li > a{
+  line-height: 20px;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.cssmenu .menu  a:hover,
+.cssmenu .menu  a:focus,
+.cssmenu .menu  a:active{
+    text-decoration: none;
+}
+.cssmenu .menu > .search-box > ul{
+    width: 480px;   
+    text-align: right;
+    max-width: 480px;
+    
+}
+.search-box .search-form{
+    padding: 30px;
+}
+.cssmenu .menu > .search-box:hover > ul{
+    left: auto;
+    right: 0;
+}
+.cssmenu > ul > li.has-sub:hover > a::after {
+ 
+}
+.cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  z-index: 99999 !important;  
+  text-align: left;
+  border-bottom: none;
+  background-color: #fff;
+  display: block;
+  margin-top: -4px;
+}
+.cssmenu li:hover > ul {
+  left: auto;
+  -webkit-animation: fadeinUp .3s; /* Safari and Chrome */
+    -moz-animation: fadeinUp .3s; /* Firefox */
+    -ms-animation: fadeinUp .3s; /* Internet Explorer */
+    -o-animation: fadeinUp .3s; /* Opera */
+    animation: fadeinUp .3s;
+}
+.cssmenu.align-right li:hover > ul {
+  right: 0;
+}
+.cssmenu ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+.cssmenu.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+
+.cssmenu ul ul li a {
+  padding: 15px 15px;
+  width: 220px;
+  font-size: 15px;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  display: block;
+  background-color: #fff;
+}
+/*navbar-dark*/
+
+.scroll .navbar{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.transparent-header .border-bottom{
+  border-bottom-color: rgba(255, 255, 255, .3) !important;
+}
+.transparent-header .border-top{
+  border-top-color: rgba(255, 255, 255, .3) !important;
+}
+  
+.scroll .border-bottom{
+  border-bottom-width: 0px !important;
+}
+
+@media (max-width: 600px) {
+  .admin-bar .is-sticky .navbar{
+    margin-top: 0;
+  }
+}
+@media (max-width: 360px) {
+  .is-sticky .toggle-button .menu-button{
+    margin-top: 5px;
+  }
+}
+@keyframes fadeinUp {
+    from { opacity: 0; margin-top: 30px; }
+    to   { opacity: 1; margin-top: 0; }
+}
+
+/* Firefox */
+@-moz-keyframes fadeinUp {
+    from { opacity: 0; margin-top: 10px;}
+    to   { opacity: 1; margin-top: 0;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadeinUp {
+    from { opacity: 0; margin-top: 10px;}
+    to   { opacity: 1; margin-top: 0;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinUp {
+    from { opacity: 0; margin-top: 10px;}
+    to   { opacity: 1; margin-top: 0;}
+}
+
+/* Opera */
+@-o-keyframes fadeinUp {
+    from { opacity: 0; margin-top: 10px;}
+    to   { opacity: 1; margin-top: 0;}
+}
